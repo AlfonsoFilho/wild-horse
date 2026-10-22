@@ -1,0 +1,4 @@
+/target
+# Wild Horse working state: everything under .wh/ is derived, except the graph layout
+**/.wh/*
+!**/.wh/layout.json

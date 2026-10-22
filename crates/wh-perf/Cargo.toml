@@ -1,0 +1,19 @@
+[package]
+name = "wh-perf"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-codegen.workspace = true
+wh-synth.workspace = true
+wh-project.workspace = true
+wh-build = { path = "../wh-build" }
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+anyhow.workspace = true
+blake3.workspace = true
+tracing = "0.1"

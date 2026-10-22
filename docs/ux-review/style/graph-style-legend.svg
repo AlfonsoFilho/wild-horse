@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1240" height="600" viewBox="0 0 1240 600" font-family="-apple-system, 'SF Pro Text', 'Helvetica Neue', Helvetica, sans-serif">
+  <rect width="1240" height="600" fill="#0F1012"/>
+  <text x="24" y="34" fill="#A9AEB7" font-size="13" font-weight="600" letter-spacing="0.06em">WILD HORSE GRAPH STYLE — legend (dark)</text>
+
+  <!-- column 1: kinds -->
+  <text x="24" y="70" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">NODE KINDS (stripe + glyph + 10% tint)</text>
+  <g font-size="12.5" font-weight="600">
+    <g transform="translate(24,84)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect width="250" height="30" rx="7" fill="#56C2E6" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#56C2E6"/><text x="12" y="20" fill="#56C2E6" font-style="italic">ƒ</text><text x="28" y="20" fill="#E6E8EB">def / step</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.def #56C2E6</text></g>
+    <g transform="translate(24,122)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect width="250" height="30" rx="7" fill="#9AA7FF" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#9AA7FF"/><text x="11" y="20" fill="#9AA7FF">⇉</text><text x="28" y="20" fill="#E6E8EB">flow / app</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.flow #9AA7FF</text></g>
+    <g transform="translate(24,160)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect width="250" height="30" rx="7" fill="#F0A35E" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#F0A35E"/><text x="11" y="20" fill="#F0A35E">⊕</text><text x="28" y="20" fill="#E6E8EB">capability / adapter</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.effect</text></g>
+    <g transform="translate(24,198)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect width="250" height="30" rx="7" fill="#C3A6FF" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#C3A6FF"/><text x="11" y="20" fill="#C3A6FF">{}</text><text x="28" y="20" fill="#E6E8EB">struct · enum · type · alias</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.data</text></g>
+    <g transform="translate(24,236)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect width="250" height="30" rx="7" fill="#F47FA0" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#F47FA0"/><text x="12" y="20" fill="#F47FA0">!</text><text x="28" y="20" fill="#E6E8EB">@error enum</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.error</text></g>
+    <g transform="translate(24,274)"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#2A2D33" stroke-dasharray="4 3"/><rect x="0" y="7" width="3" height="16" rx="1.5" fill="#A9AEB7"/><text x="12" y="20" fill="#A9AEB7">→</text><text x="28" y="20" fill="#E6E8EB">flow input (param)</text><text x="242" y="20" fill="#8A909A" font-size="10.5" font-weight="400" text-anchor="end">kind.param, dashed</text></g>
+    <g transform="translate(24,312)" opacity="0.45"><rect width="250" height="30" rx="7" fill="#1D1F23" stroke="#E8B44C" stroke-dasharray="4 3"/><text x="12" y="20" fill="#E8B44C">⚠</text><text x="28" y="20" fill="#E6E8EB">ghost (block won't parse)</text></g>
+  </g>
+
+  <!-- column 2: ports -->
+  <text x="320" y="70" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">PORTS: colour = type family, shape = structure</text>
+  <g font-size="12" fill="#E6E8EB">
+    <circle cx="332" cy="98" r="5.5" fill="#7FD8B4"/><text x="346" y="102">scalar  bool · int · float · u8 · Age</text>
+    <circle cx="332" cy="124" r="5.5" fill="#F59EC4"/><text x="346" y="128">text  str · char · bytes · Email</text>
+    <circle cx="332" cy="150" r="5.5" fill="#7DB3FF"/><text x="346" y="154">record  struct · tuple</text>
+    <circle cx="332" cy="176" r="5.5" fill="#C3A6FF"/><text x="346" y="180">enum</text>
+    <circle cx="332" cy="202" r="5.5" fill="#F0A35E"/><text x="346" y="206">capability (uses)</text>
+    <circle cx="332" cy="228" r="5" fill="none" stroke="#8A909A" stroke-width="1.5"/><text x="346" y="232">unit / None (hollow)</text>
+  </g>
+  <g font-size="12" fill="#E6E8EB">
+    <text x="320" y="270" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">SHAPES (any colour)</text>
+    <circle cx="332" cy="292" r="5.5" fill="#7DB3FF"/><text x="346" y="296">T — single value</text>
+    <path d="M332,309.5 a5.5,5.5 0 1,0 0.01,0 z" fill="none" stroke="#7DB3FF" stroke-width="2"/><path d="M332,309.5 a5.5,5.5 0 0,0 0,11 z" fill="#7DB3FF"/><text x="346" y="320">T | None — half-filled</text>
+    <rect x="326" y="334" width="12" height="9" rx="2" fill="#7DB3FF"/><text x="346" y="344">list · set · dict · array — bar</text>
+    <path d="M332,356 l6,6 l-6,6 l-6,-6 z" fill="#7DB3FF"/><text x="346" y="368">Stream[T] — diamond</text>
+    <path d="M326,382 l6,10 l6,-10 z" fill="#F2676B"/><text x="346" y="392">raises E — red triangle on bottom edge</text>
+    <rect x="320" y="404" width="30" height="15" rx="4" fill="#2A2D33"/><text x="335" y="415" fill="#A9AEB7" font-size="10" text-anchor="middle">own</text>
+    <rect x="356" y="404" width="30" height="15" rx="4" fill="#2A2D33"/><text x="371" y="415" fill="#A9AEB7" font-size="10" text-anchor="middle">mut</text>
+    <text x="394" y="416" fill="#E6E8EB">mode chips (borrow = no chip)</text>
+  </g>
+
+  <!-- column 3: edges -->
+  <text x="660" y="70" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">EDGES</text>
+  <g font-size="12" fill="#E6E8EB">
+    <line x1="660" y1="96" x2="760" y2="96" stroke="#7DB3FF" stroke-width="1.75"/><text x="774" y="100">data — solid 1.75 px, source type colour</text>
+    <line x1="660" y1="122" x2="760" y2="122" stroke="#9AA7FF" stroke-width="2.25"/><path d="M760,122 l-8,-4 v8 z" fill="#9AA7FF"/><text x="774" y="126">result — into the flow output, 2.25 px</text>
+    <line x1="660" y1="148" x2="760" y2="148" stroke="#F0A35E" stroke-width="1.25" stroke-dasharray="6 4"/><text x="774" y="152">uses / provides — dashed 6·4</text>
+    <line x1="660" y1="174" x2="752" y2="174" stroke="#F0A35E" stroke-opacity="0.7" stroke-width="1.25" stroke-dasharray="1.5 3.5" stroke-linecap="round"/><path d="M760,174 l-9,-5 v10 z" fill="none" stroke="#F0A35E"/><text x="774" y="178">implements — dotted, hollow arrow</text>
+    <line x1="660" y1="200" x2="760" y2="200" stroke="#6B717C" stroke-width="1" stroke-dasharray="1 3" stroke-linecap="round"/><text x="774" y="204">calls — dotted 1 px (hidden by default)</text>
+    <line x1="660" y1="226" x2="760" y2="226" stroke="#F2676B" stroke-width="1.5" stroke-dasharray="5 4"/><text x="774" y="230">error rail — raises propagation</text>
+    <line x1="660" y1="252" x2="760" y2="252" stroke="#6EA0FF" stroke-width="2.5"/><text x="774" y="256">selected / hovered — accent, 2.5 px</text>
+    <line x1="660" y1="278" x2="760" y2="278" stroke="#6EA0FF" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/><text x="774" y="282">executed (last run) — animated dots</text>
+    <line x1="660" y1="304" x2="760" y2="304" stroke="#F2676B" stroke-width="2"/><text x="774" y="308">invalid connection — solid red (Blender)</text>
+  </g>
+  <text x="660" y="344" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">DATA MODEL ENDS (crow's foot, screen-sized)</text>
+  <g stroke="#A9AEB7" stroke-width="1.5" fill="none" font-size="12">
+    <line x1="660" y1="370" x2="720" y2="370"/><line x1="712" y1="363" x2="712" y2="377"/><text x="730" y="374" fill="#E6E8EB" stroke="none">1</text>
+    <line x1="780" y1="370" x2="840" y2="370"/><circle cx="824" cy="370" r="4"/><line x1="834" y1="363" x2="834" y2="377"/><text x="850" y="374" fill="#E6E8EB" stroke="none">0..1</text>
+    <line x1="900" y1="370" x2="960" y2="370"/><circle cx="938" cy="370" r="4"/><path d="M948,370 L960,362 M948,370 L960,378"/><text x="970" y="374" fill="#E6E8EB" stroke="none">0..*</text>
+    <line x1="1020" y1="370" x2="1080" y2="370"/><line x1="1060" y1="363" x2="1060" y2="377"/><path d="M1068,370 L1080,362 M1068,370 L1080,378"/><text x="1090" y="374" fill="#E6E8EB" stroke="none">1..*</text>
+    <line x1="660" y1="402" x2="720" y2="402" stroke="#7DB3FF" stroke-dasharray="6 4"/><text x="730" y="406" fill="#E6E8EB" stroke="none">key → references — dashed record blue</text>
+    <line x1="960" y1="402" x2="1020" y2="402" stroke="#C3A6FF"/><text x="1030" y="406" fill="#E6E8EB" stroke="none">variant-of — lilac</text>
+  </g>
+
+  <!-- status badges -->
+  <text x="24" y="470" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">STATUS (quiet when good, loud when bad; always glyph + text on hover)</text>
+  <g font-size="11.5" font-weight="600">
+    <g transform="translate(24,484)"><rect width="122" height="22" rx="11" fill="none" stroke="#8A909A" stroke-dasharray="3 2"/><text x="10" y="15" fill="#8A909A">◌ needs synth</text></g>
+    <g transform="translate(156,484)"><rect width="94" height="22" rx="11" fill="#6EA0FF" fill-opacity="0.12"/><text x="10" y="15" fill="#A9C4FF">⋯ queued 3</text></g>
+    <g transform="translate(260,484)"><rect width="134" height="22" rx="11" fill="#6EA0FF" fill-opacity="0.16"/><path d="M14,11 m-5,0 a5,5 0 1,1 5,5" fill="none" stroke="#6EA0FF" stroke-width="1.8" stroke-linecap="round"/><text x="26" y="15" fill="#A9C4FF">writing · 12 s</text></g>
+    <g transform="translate(404,484)"><rect width="128" height="22" rx="11" fill="#6EA0FF" fill-opacity="0.16"/><text x="10" y="15" fill="#A9C4FF">◔ verifying 2/3</text></g>
+    <g transform="translate(542,484)"><circle cx="11" cy="11" r="8" fill="none" stroke="#4CC38A" stroke-width="1.5"/><path d="M7,11 l3,3 l5,-6" fill="none" stroke="#4CC38A" stroke-width="1.6" stroke-linecap="round"/><text x="26" y="15" fill="#8A909A" font-weight="400">verified (glyph only)</text></g>
+    <g transform="translate(700,484)"><rect width="86" height="22" rx="11" fill="#F2676B" fill-opacity="0.16" stroke="#F2676B" stroke-opacity="0.6"/><text x="10" y="15" fill="#F2676B">✗ failing</text></g>
+    <g transform="translate(796,484)"><rect width="104" height="22" rx="11" fill="#E8B44C" fill-opacity="0.14"/><text x="10" y="15" fill="#E8B44C">◐ stale: spec</text></g>
+    <g transform="translate(910,484)"><rect width="84" height="22" rx="11" fill="#2A2D33"/><text x="10" y="15" fill="#A9AEB7">⌖ pinned</text></g>
+    <g transform="translate(1004,484)"><rect width="128" height="22" rx="11" fill="#C08CFF" fill-opacity="0.14"/><text x="10" y="15" fill="#C08CFF">✦ AI · unreviewed</text></g>
+  </g>
+
+  <!-- frame -->
+  <text x="24" y="540" fill="#8A909A" font-size="11" font-weight="600" letter-spacing="0.06em">SECTION FRAME</text>
+  <g transform="translate(130,526)">
+    <rect width="420" height="60" rx="10" fill="#FFFFFF" fill-opacity="0.025" stroke="#3A3E46"/>
+    <path d="M0,10 a10,10 0 0,1 10,-10 h400 a10,10 0 0,1 10,10 v18 h-420 z" fill="#FFFFFF" fill-opacity="0.04"/>
+    <text x="12" y="19" fill="#A9AEB7" font-size="12.5" font-weight="600">## Validation and normalization</text>
+    <text x="408" y="19" fill="#8A909A" font-size="10.5" text-anchor="end">5 nodes · ✗ 1</text>
+    <text x="12" y="47" fill="#8A909A" font-size="11">title band reserved by layout; never covered · box = bounds of members + 16 px</text>
+  </g>
+  <g transform="translate(600,526)">
+    <rect width="300" height="60" rx="10" fill="#FFFFFF" fill-opacity="0.015" stroke="#2A2D33" stroke-dasharray="4 4"/>
+    <text x="12" y="19" fill="#8A909A" font-size="12" font-weight="600">comment (layout-only note)</text>
+    <text x="12" y="44" fill="#8A909A" font-size="11">dashed; stored in .wh/layout.json</text>
+  </g>
+</svg>

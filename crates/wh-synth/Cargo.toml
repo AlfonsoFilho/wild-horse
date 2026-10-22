@@ -1,0 +1,17 @@
+[package]
+name = "wh-synth"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-codegen.workspace = true
+wh-build = { path = "../wh-build" }
+wh-agent = { path = "../wh-agent" }
+serde_json.workspace = true
+anyhow.workspace = true
+blake3.workspace = true
+serde.workspace = true
+tracing = "0.1"

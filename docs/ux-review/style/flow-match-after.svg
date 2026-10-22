@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1240" height="520" viewBox="0 0 1240 520" font-family="-apple-system, 'SF Pro Text', 'Helvetica Neue', Helvetica, sans-serif">
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity="0.06"/></pattern>
+  </defs>
+  <rect width="1240" height="520" fill="#0F1012"/><rect width="1240" height="520" fill="url(#dots)"/>
+  <text x="24" y="34" fill="#A9AEB7" font-size="13" font-weight="600" letter-spacing="0.06em">AFTER — todo `execute` as a switch with labeled lanes (compare screenshot 19)</text>
+
+  <!-- section frame -->
+  <rect x="24" y="52" width="1192" height="420" rx="10" fill="#FFFFFF" fill-opacity="0.02" stroke="#3A3E46"/>
+  <path d="M24,62 a10,10 0 0,1 10,-10 h1172 a10,10 0 0,1 10,10 v18 h-1192 z" fill="#FFFFFF" fill-opacity="0.04"/>
+  <text x="38" y="71" fill="#A9AEB7" font-size="12.5" font-weight="600">## Running a command</text>
+  <text x="1204" y="71" fill="#8A909A" font-size="10.5" text-anchor="end">flow execute · 11 steps · ◌ 5 need synthesis</text>
+
+  <!-- param -->
+  <g transform="translate(44,236)">
+    <rect width="132" height="48" rx="8" fill="#1D1F23" stroke="#3A3E46" stroke-dasharray="4 3"/>
+    <text x="10" y="18" fill="#A9AEB7" font-size="12.5" font-weight="600">→ cmd</text>
+    <text x="10" y="37" fill="#A9AEB7" font-size="11" font-family="'JetBrains Mono', Menlo">Command</text>
+    <circle cx="132" cy="32" r="5" fill="#C3A6FF" stroke="#1D1F23" stroke-width="2"/>
+  </g>
+  <!-- load_list -->
+  <g transform="translate(44,120)">
+    <rect width="150" height="56" rx="8" fill="#1D1F23" stroke="#2A2D33"/>
+    <rect width="150" height="26" rx="8" fill="#56C2E6" fill-opacity="0.10"/><rect x="0" y="6" width="3" height="14" rx="1.5" fill="#56C2E6"/>
+    <text x="12" y="18" fill="#56C2E6" font-size="12" font-style="italic" font-weight="600">ƒ</text><text x="25" y="18" fill="#E6E8EB" font-size="12.5" font-weight="600">load_list</text>
+    <text x="140" y="18" fill="#F0A35E" font-size="11" text-anchor="end">⊕ Store</text>
+    <text x="136" y="45" fill="#A9AEB7" font-size="11" font-family="'JetBrains Mono', Menlo" text-anchor="end">todos: TodoList</text>
+    <rect x="144" y="37" width="12" height="9" rx="2" fill="#7DB3FF"/>
+  </g>
+
+  <!-- switch node -->
+  <g transform="translate(240,140)">
+    <rect width="190" height="232" rx="8" fill="#1D1F23" stroke="#2A2D33"/>
+    <rect width="190" height="28" rx="8" fill="#9AA7FF" fill-opacity="0.10"/><rect x="0" y="7" width="3" height="14" rx="1.5" fill="#9AA7FF"/>
+    <text x="12" y="19" fill="#9AA7FF" font-size="12.5" font-weight="600">⑂</text><text x="28" y="19" fill="#E6E8EB" font-size="12.5" font-weight="600">match cmd</text>
+    <circle cx="0" cy="128" r="5" fill="#C3A6FF" stroke="#1D1F23" stroke-width="2"/>
+    <g font-size="12" fill="#E6E8EB">
+      <text x="176" y="56" text-anchor="end">Add(title)</text><circle cx="190" cy="52" r="5" fill="#F59EC4" stroke="#1D1F23" stroke-width="2"/>
+      <text x="176" y="96" text-anchor="end">Done(id)</text><circle cx="190" cy="92" r="5" fill="#7FD8B4" stroke="#1D1F23" stroke-width="2"/>
+      <text x="176" y="136" text-anchor="end">Remove(id)</text><circle cx="190" cy="132" r="5" fill="#7FD8B4" stroke="#1D1F23" stroke-width="2"/>
+      <text x="176" y="176" text-anchor="end">ClearDone</text><circle cx="190" cy="172" r="5" fill="none" stroke="#8A909A" stroke-width="1.5"/>
+      <text x="176" y="216" text-anchor="end">List(include_done)</text><circle cx="190" cy="212" r="5" fill="#7FD8B4" stroke="#1D1F23" stroke-width="2"/>
+    </g>
+  </g>
+  <path d="M176,268 C210,268 205,268 240,268" fill="none" stroke="#C3A6FF" stroke-width="1.75"/>
+  <!-- todos bus -->
+    
+  <!-- lanes -->
+  <g font-size="12">
+    <!-- lane rows y = 192, 232, 272, 312, 352 -->
+    <g id="lane">
+    </g>
+  </g>
+  <g>
+    <!-- Add -->
+    <path d="M430,192 L490,192" stroke="#F59EC4" stroke-width="1.75"/>
+    <rect x="490" y="178" width="150" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="490" y="184" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="502" y="197" fill="#E6E8EB" font-size="12.5" font-weight="600">add_task</text><text x="630" y="197" fill="#8A909A" font-size="11" text-anchor="end">◌</text>
+    <path d="M640,192 L700,192" stroke="#7DB3FF" stroke-width="1.75"/>
+    <rect x="700" y="178" width="130" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="700" y="184" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="712" y="197" fill="#E6E8EB" font-size="12.5" font-weight="600">commit</text><text x="820" y="197" fill="#F0A35E" font-size="11" text-anchor="end">⊕</text>
+    <!-- Done -->
+    <path d="M430,232 L490,232" stroke="#7FD8B4" stroke-width="1.75"/>
+    <rect x="490" y="218" width="150" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="490" y="224" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="502" y="237" fill="#E6E8EB" font-size="12.5" font-weight="600">complete</text><text x="630" y="237" fill="#8A909A" font-size="11" text-anchor="end">◌</text>
+    <path d="M640,232 L700,232" stroke="#7DB3FF" stroke-width="1.75"/>
+    <rect x="700" y="218" width="130" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="700" y="224" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="712" y="237" fill="#E6E8EB" font-size="12.5" font-weight="600">commit</text><text x="820" y="237" fill="#F0A35E" font-size="11" text-anchor="end">⊕</text>
+    <!-- Remove -->
+    <path d="M430,272 L490,272" stroke="#7FD8B4" stroke-width="1.75"/>
+    <rect x="490" y="258" width="150" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="490" y="264" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="502" y="277" fill="#E6E8EB" font-size="12.5" font-weight="600">remove</text><text x="630" y="277" fill="#8A909A" font-size="11" text-anchor="end">◌</text>
+    <path d="M640,272 L700,272" stroke="#7DB3FF" stroke-width="1.75"/>
+    <rect x="700" y="258" width="130" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="700" y="264" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="712" y="277" fill="#E6E8EB" font-size="12.5" font-weight="600">commit</text><text x="820" y="277" fill="#F0A35E" font-size="11" text-anchor="end">⊕</text>
+    <!-- ClearDone -->
+    <path d="M430,312 L490,312" stroke="#8A909A" stroke-width="1.5" stroke-dasharray="1 3"/>
+    <rect x="490" y="298" width="150" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="490" y="304" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="502" y="317" fill="#E6E8EB" font-size="12.5" font-weight="600">clear_done</text>
+    <circle cx="624" cy="312" r="6" fill="none" stroke="#4CC38A" stroke-width="1.4"/><path d="M621,312 l2,2 l4,-4.5" fill="none" stroke="#4CC38A" stroke-width="1.4"/>
+    <path d="M640,312 L700,312" stroke="#7DB3FF" stroke-width="1.75"/>
+    <rect x="700" y="298" width="130" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="700" y="304" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="712" y="317" fill="#E6E8EB" font-size="12.5" font-weight="600">commit</text><text x="820" y="317" fill="#F0A35E" font-size="11" text-anchor="end">⊕</text>
+    <!-- List -->
+    <path d="M430,352 L490,352" stroke="#7FD8B4" stroke-width="1.75"/>
+    <rect x="490" y="338" width="150" height="28" rx="7" fill="#1D1F23" stroke="#2A2D33"/><rect x="490" y="344" width="3" height="16" rx="1.5" fill="#56C2E6"/>
+    <text x="502" y="357" fill="#E6E8EB" font-size="12.5" font-weight="600">show</text><text x="630" y="357" fill="#8A909A" font-size="11" text-anchor="end">◌</text>
+    <!-- merge to result -->
+    <path d="M830,192 C880,192 880,265 930,265 M830,232 C880,232 880,265 930,265 M830,272 C880,272 880,265 930,265 M830,312 C880,312 880,265 930,265 M640,352 C800,352 860,265 930,265" fill="none" stroke="#F59EC4" stroke-width="1.5" stroke-opacity="0.8"/>
+    <g transform="translate(930,240)">
+      <rect width="190" height="50" rx="8" fill="#1D1F23" stroke="#2A2D33"/>
+      <rect width="190" height="24" rx="8" fill="#9AA7FF" fill-opacity="0.10"/><rect x="0" y="5" width="3" height="14" rx="1.5" fill="#9AA7FF"/>
+      <text x="12" y="17" fill="#9AA7FF" font-size="12" font-weight="600">⇉</text><text x="28" y="17" fill="#E6E8EB" font-size="12.5" font-weight="600">execute → str</text>
+      <circle cx="0" cy="25" r="5" fill="#F59EC4" stroke="#1D1F23" stroke-width="2"/>
+      <path d="M90,50 l6,10 l6,-10 z" fill="#F2676B"/>
+      <text x="108" y="44" fill="#F2676B" font-size="10.5">raises TodoError</text>
+    </g>
+  </g>
+  <text x="44" y="430" fill="#8A909A" font-size="10.5">Legend: lane = one `case` arm, labeled on the switch output · `todos` (from load_list) feeds every lane as a shared input, revealed on hover · repeated `commit` drawn per lane (hover shows "same def, 4 call sites") · ◌ needs synthesis · ✓ verified</text>
+  <text x="44" y="448" fill="#8A909A" font-size="11">Compact LOD shown (zoom 0.35–0.7): header-only nodes, name ≥ 11 px; full port rows appear at zoom ≥ 0.7.</text>
+  <text x="24" y="500" fill="#C9CDD4" font-size="11">The frame's title band is reserved by layout, so it is never covered; section totals sit at the right of the band.</text>
+</svg>

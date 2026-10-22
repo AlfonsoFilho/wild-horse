@@ -1,0 +1,43 @@
+[package]
+name = "wh-ide"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wh-ide"
+path = "src/main.rs"
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-doc.workspace = true
+wh-edit.workspace = true
+wh-graph.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+toml.workspace = true
+gpui-kit = "0.8.0"
+wh-project.workspace = true
+wh-codegen.workspace = true
+wh-build = { path = "../wh-build" }
+wh-synth = { path = "../wh-synth" }
+wh-agent = { path = "../wh-agent" }
+wh-author = { path = "../wh-author" }
+notify = "8"
+dirs = "6"
+similar = "2"
+pulldown-cmark.workspace = true
+wh-perf = { path = "../wh-perf" }
+wh-mcp = { path = "../wh-mcp" }
+
+# offscreen screenshots of the panels (src/snapshots.rs), for UX checks:
+# `WH_IDE_SNAPSHOTS=1 cargo run -p wh-ide --features snapshots`
+gpui-pre = { version = "0.3.9", optional = true }
+gpui-pre-platform = { version = "0.3.9", optional = true }
+
+wh-live = { path = "../wh-live" }
+
+[features]
+snapshots = ["dep:gpui-pre", "dep:gpui-pre-platform", "gpui-pre/test-support", "gpui-pre-platform/test-support"]

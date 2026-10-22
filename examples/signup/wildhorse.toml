@@ -1,0 +1,17 @@
+[project]
+name = "signup"
+sources = ["src"]
+
+[agent.compiler]
+command = "npx"
+args = ["-y", "@agentclientprotocol/claude-agent-acp"]
+
+[agent.author]
+command = "npx"
+args = ["-y", "@agentclientprotocol/claude-agent-acp"]
+
+[synthesis]
+mode = "auto"          # auto | on_demand
+debounce_ms = 3000
+concurrency = 4
+max_rounds = 4

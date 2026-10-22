@@ -1,0 +1,26 @@
+[package]
+name = "wh-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wh"
+path = "src/main.rs"
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-codegen.workspace = true
+wh-project.workspace = true
+wh-build = { path = "../wh-build" }
+wh-synth = { path = "../wh-synth" }
+wh-agent = { path = "../wh-agent" }
+wh-author = { path = "../wh-author" }
+wh-mcp = { path = "../wh-mcp" }
+wh-perf = { path = "../wh-perf" }
+wh-live = { path = "../wh-live" }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow.workspace = true
+serde_json.workspace = true
+clap.workspace = true

@@ -1,0 +1,36 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+wh-syntax = { path = "crates/wh-syntax" }
+wh-model = { path = "crates/wh-model" }
+wh-graph = { path = "crates/wh-graph" }
+wh-doc = { path = "crates/wh-doc" }
+wh-edit = { path = "crates/wh-edit" }
+wh-codegen = { path = "crates/wh-codegen" }
+wh-build = { path = "crates/wh-build" }
+wh-agent = { path = "crates/wh-agent" }
+wh-synth = { path = "crates/wh-synth" }
+wh-author = { path = "crates/wh-author" }
+wh-project = { path = "crates/wh-project" }
+
+anyhow = "1"
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+pulldown-cmark = { version = "0.12", default-features = false }
+blake3 = "1"
+insta = "1"
+clap = { version = "4", features = ["derive"] }
+ropey = "1"
+diffy = "0.4"
+notify = "6"
+tokio = { version = "1", features = ["full"] }
+tempfile = "3"

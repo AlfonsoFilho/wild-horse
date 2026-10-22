@@ -1,0 +1,11 @@
+[package]
+name = "wh-edit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-doc.workspace = true
+serde.workspace = true

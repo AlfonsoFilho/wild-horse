@@ -1,0 +1,18 @@
+[project]
+name = "signup_server"
+# the signup spec is reused as it is: its modules are sources of this project too
+sources = ["src", "../signup/src"]
+
+[agent.compiler]
+command = "npx"
+args = ["-y", "@agentclientprotocol/claude-agent-acp"]
+
+[agent.author]
+command = "npx"
+args = ["-y", "@agentclientprotocol/claude-agent-acp"]
+
+[synthesis]
+mode = "auto"          # auto | on_demand
+debounce_ms = 3000
+concurrency = 4
+max_rounds = 4

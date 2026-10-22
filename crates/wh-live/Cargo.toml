@@ -1,0 +1,15 @@
+[package]
+name = "wh-live"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wh-syntax.workspace = true
+wh-model.workspace = true
+wh-codegen.workspace = true
+wh-project.workspace = true
+wh-perf = { path = "../wh-perf" }
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
